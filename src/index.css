@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1B4D8E;
+  --color-inst-blue: #2C3A8C;
+  --color-inst-green: #006738;
+  --color-inst-yellow: #E8BD63;
+  --color-inst-pink: #FDF2F0;
+  --color-pop: #e63946;
+  --color-accent: #2c1e16;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", "Outfit", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-[#3E3A36] bg-[#FDF2F0]/30;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-6 lg:px-12;
+  }
+  
+  .serif-heading {
+    @apply font-serif italic;
+  }
+}
