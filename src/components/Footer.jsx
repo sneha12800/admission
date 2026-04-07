@@ -89,7 +89,13 @@ const Footer = () => {
               },
               {
                 title: "Resources",
-                links: ["Admissions Portal", "Alumni Network", "Career Placements", "NIRF Data", "Tenders & Notices"]
+                links: [
+                  { name: "Admissions Portal", href: "https://admissions-tat.tekkzy.com/" },
+                  { name: "Alumni Network", href: "https://alumni-tat.tekkzy.com/" },
+                  { name: "Career Placements", href: "#" },
+                  { name: "NIRF Data", href: "#" },
+                  { name: "Tenders & Notices", href: "#" }
+                ]
               }
             ].map((col, idx) => (
               <div key={idx}>
@@ -99,10 +105,13 @@ const Footer = () => {
                 </div>
                 <ul className="space-y-5 list-none p-0 m-0">
                   {col.links.map(link => (
-                    <li key={link}>
-                      <a href="#" className="text-[14px] font-bold text-gray-500 hover:text-inst-yellow transition-all flex items-center gap-3 group uppercase tracking-widest text-[0.8em]">
+                    <li key={typeof link === 'string' ? link : link.name}>
+                      <a 
+                        href={typeof link === 'string' ? "#" : link.href} 
+                        className="text-[14px] font-bold text-gray-500 hover:text-inst-yellow transition-all flex items-center gap-3 group uppercase tracking-widest text-[0.8em]"
+                      >
                         <span className="w-0 h-[1px] bg-inst-yellow group-hover:w-4 transition-all duration-300"></span>
-                        {link}
+                        {typeof link === 'string' ? link : link.name}
                       </a>
                     </li>
                   ))}

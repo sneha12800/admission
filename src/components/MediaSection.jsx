@@ -28,10 +28,10 @@ const MediaSection = () => {
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-extrabold flex items-center justify-center gap-4 flex-wrap mb-4 font-sans text-primary"
+            className="text-4xl md:text-5xl font-extrabold flex items-center justify-center gap-4 flex-wrap mb-4 font-sans text-primary uppercase tracking-tight"
           >
-            <span className="bg-inst-yellow text-inst-blue px-6 py-2 rounded-lg uppercase text-[0.8em]">Institutional</span>
-            <span className="font-serif italic font-medium text-inst-yellow">Media</span>
+            <span className="text-inst-green">Institutional</span>
+            <span className="font-serif italic font-medium text-inst-yellow lowercase">Media</span>
           </motion.h2>
           <p className="text-[#665b55] max-w-xl mx-auto font-light">Take a visual journey through Trident Academy of Technology.</p>
         </div>

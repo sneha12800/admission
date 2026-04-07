@@ -9,10 +9,12 @@ import Exams from './components/Exams';
 import MediaSection from './components/MediaSection';
 import ResourcesSection from './components/ResourcesSection';
 import Footer from './components/Footer';
+import BackgroundDesigns from './components/BackgroundDesigns';
 
 function App() {
   return (
-    <div className="min-h-screen bg-inst-pink/20">
+    <div className="relative min-h-screen">
+      <BackgroundDesigns />
       <Navbar />
       <main className="pt-[140px]">
         <Hero />

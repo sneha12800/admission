@@ -48,10 +48,10 @@ const Programs = () => {
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-3xl md:text-5xl font-extrabold flex items-center justify-center gap-4 flex-wrap mb-4"
+            className="text-4xl md:text-5xl font-extrabold flex items-center justify-center gap-4 flex-wrap mb-4 uppercase tracking-tight"
           >
-            <span className="bg-white text-inst-blue px-6 py-2 rounded-lg uppercase text-[0.8em]">Academic</span>
-            <span className="font-serif italic font-medium">Programs</span>
+            <span className="text-white">Academic</span>
+            <span className="font-serif italic font-medium text-inst-yellow lowercase">Programs</span>
           </motion.h2>
           <p className="text-white/70 max-w-2xl mx-auto font-light">Discover our comprehensive range of undergraduate and postgraduate degree programs.</p>
         </div>

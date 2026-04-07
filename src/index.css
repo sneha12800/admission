@@ -18,8 +18,30 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply font-sans text-[#3E3A36] bg-[#FDF2F0]/30;
+    @apply font-sans text-[#3E3A36] overflow-x-hidden;
   }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .bg-grid {
+    background-image: radial-gradient(circle, rgba(44, 58, 140, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  .animate-mesh {
+    animation: mesh 20s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes mesh {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(2%, 2%) scale(1.1); }
+  66% { transform: translate(-2%, 4%) scale(0.9); }
+  100% { transform: translate(1%, -2%) scale(1); }
 }
 
 @layer components {

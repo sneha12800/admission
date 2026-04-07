@@ -12,7 +12,7 @@ const Process = () => {
       num: "02",
       title: "Entrance Exam",
       text: "Appear for JEE Main for B.Tech or OJEE.",
-      className: "md:col-span-1 md:row-span-1 bg-inst-green text-white"
+      className: "md:col-span-1 md:row-span-1 bg-inst-green/90 text-white"
     },
     {
       num: "03",
@@ -24,18 +24,18 @@ const Process = () => {
       num: "04",
       title: "Confirmation",
       text: "Secure admission by completing documentation and fee payment.",
-      className: "md:col-span-2 md:row-span-1 bg-inst-blue text-white"
+      className: "md:col-span-2 md:row-span-1 bg-inst-blue/90 text-white"
     },
     {
       num: "05",
       title: "Counseling Support",
       text: "Receive comprehensive guidance and support before classes officially begin.",
-      className: "md:col-span-4 md:row-span-1 bg-inst-green text-white"
+      className: "md:col-span-4 md:row-span-1 bg-inst-green/90 text-white"
     }
   ];
 
   return (
-    <section id="process" className="py-24 bg-inst-pink/50 overflow-hidden">
+    <section id="process" className="py-24 relative overflow-hidden">
       <div className="container">
         <div className="text-center mb-16">
           <motion.span 
@@ -48,10 +48,10 @@ const Process = () => {
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-extrabold flex items-center justify-center gap-4 flex-wrap mb-4 font-sans text-primary"
+            className="text-4xl md:text-5xl font-extrabold flex items-center justify-center gap-4 flex-wrap mb-4 font-sans text-primary uppercase tracking-tight"
           >
-            <span className="bg-inst-green text-white px-6 py-2 rounded-lg uppercase text-[0.8em]">Enrolment</span>
-            <span className="font-serif italic font-medium text-inst-yellow">Process</span>
+            <span className="text-inst-green">Enrolment</span>
+            <span className="font-serif italic font-medium text-inst-yellow lowercase">Process</span>
           </motion.h2>
           <p className="text-[#665b55] max-w-xl mx-auto font-light">A seamless 5-step journey from application to enrollment.</p>
         </div>
@@ -64,7 +64,7 @@ const Process = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className={`p-10 rounded-3xl flex flex-col justify-end relative overflow-hidden group shadow-lg ${step.className}`}
+              className={`p-10 rounded-3xl flex flex-col justify-end relative overflow-hidden group shadow-lg backdrop-blur-xl border border-white/20 ${step.className}`}
             >
               <span className="absolute top-8 left-8 text-6xl md:text-8xl font-serif font-black opacity-20 pointer-events-none group-hover:opacity-40 transition-opacity">
                 {step.num}

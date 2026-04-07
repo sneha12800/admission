@@ -2,16 +2,16 @@ import { motion } from 'framer-motion';
 
 const Eligibility = () => {
   return (
-    <section id="eligibility" className="py-24 bg-white">
+    <section id="eligibility" className="py-24 relative overflow-hidden">
       <div className="container">
         <div className="text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-extrabold flex items-center justify-center gap-4 flex-wrap mb-4 font-sans text-primary"
+            className="text-4xl md:text-5xl font-extrabold flex items-center justify-center gap-4 flex-wrap mb-4 font-sans text-primary uppercase tracking-tight"
           >
-            <span className="bg-inst-pink/50 text-inst-yellow px-6 py-2 rounded-lg uppercase text-[0.8em]">Admissions</span>
-            <span className="font-serif italic font-medium text-inst-yellow">Eligibility</span>
+            <span className="text-inst-blue">Admissions</span>
+            <span className="font-serif italic font-medium text-inst-yellow lowercase">Eligibility</span>
           </motion.h2>
           <p className="text-accent underline-offset-8">Find the specific requirements for your chosen program before you apply.</p>
         </div>
@@ -53,7 +53,7 @@ const Eligibility = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-white p-10 rounded-2xl border-t-8 border-pop shadow-xl hover:translate-y-[-5px] transition-transform duration-300 h-full"
+              className="glass-panel p-10 rounded-2xl border-t-8 border-inst-blue shadow-xl hover:translate-y-[-5px] transition-transform duration-300 h-full border-white/40"
             >
               <h4 className="text-xl font-bold font-sans text-accent mb-6 leading-tight">{card.title}</h4>
               <ul className="space-y-4">

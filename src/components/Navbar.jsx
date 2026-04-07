@@ -14,13 +14,13 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: 'https://tat.tekkzy.com/#about' },
-    { name: 'Admissions', href: '#overview' },
-    { name: 'Academics', href: 'https://tat.tekkzy.com/#academics' },
-    { name: 'Research', href: 'https://tat.tekkzy.com/#research' },
-    { name: 'Campus Life', href: 'https://tat.tekkzy.com/#campus-life' },
-    { name: 'Activities', href: 'https://tat.tekkzy.com/#activities' },
-    { name: 'Contact Us', href: '#contact' },
+    { name: 'About', href: 'https://about-tat.tekkzy.com/' },
+    { name: 'Admissions', href: 'https://admissions-tat.tekkzy.com/' },
+    { name: 'Academics', href: 'https://academics-tat.tekkzy.com/' },
+    { name: 'Research', href: 'https://research-tat.tekkzy.com/' },
+    { name: 'Campus Life', href: 'https://campuslife-tat.tekkzy.com/' },
+    { name: 'Activities', href: 'https://activities-tat.tekkzy.com/' },
+    { name: 'Contact Us', href: 'https://contactus-tat.tekkzy.com/' },
   ];
 
   return (
@@ -64,7 +64,7 @@ const Navbar = () => {
           </nav>
 
           <div className="hidden lg:flex items-center gap-5">
-            <a href="/apply" className="bg-pop hover:bg-accent text-white transition-all text-[11px] font-bold px-7 py-3 rounded-full uppercase tracking-widest">Apply Now</a>
+            <a href="https://apply-now.tekkzy.com/" className="bg-pop hover:bg-accent text-white transition-all text-[11px] font-bold px-7 py-3 rounded-full uppercase tracking-widest">Apply Now</a>
           </div>
 
           <button 
@@ -90,7 +90,7 @@ const Navbar = () => {
               </a>
             ))}
             <div className={`pt-4 transition-all duration-700 transform ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              <a href="/apply" className="bg-pop text-center block text-white text-[13px] font-extrabold py-4 rounded-xl shadow-xl">START APPLICATION</a>
+              <a href="https://apply-now.tekkzy.com/" className="bg-pop text-center block text-white text-[13px] font-extrabold py-4 rounded-xl shadow-xl">START APPLICATION</a>
             </div>
           </div>
         </div>

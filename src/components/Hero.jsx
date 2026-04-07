@@ -27,7 +27,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <a 
-              href="#process" 
+              href="https://apply-now.tekkzy.com/" 
               className="px-10 py-4 bg-primary text-white rounded-full uppercase tracking-widest font-semibold hover:bg-accent transition-all shadow-lg hover:-translate-y-1"
             >
               Apply Now
