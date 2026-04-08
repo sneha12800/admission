@@ -17,13 +17,13 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: '#' },
-    { name: 'Admissions', href: '#' },
-    { name: 'Academics', href: '#' },
-    { name: 'Research', href: '#' },
-    { name: 'Campus Life', href: '#' },
-    { name: 'Activities', href: '#' },
-    { name: 'Contact Us', href: '#' },
+    { name: 'About', href: 'https://about-tat.tekkzy.com/' },
+    { name: 'Admissions', href: 'https://admissions-tat.tekkzy.com/' },
+    { name: 'Academics', href: 'https://academics-tat.tekkzy.com/' },
+    { name: 'Research', href: 'https://research-tat.tekkzy.com/' },
+    { name: 'Campus Life', href: 'https://campuslife-tat.tekkzy.com/' },
+    { name: 'Activities', href: 'https://activities-tat.tekkzy.com/' },
+    { name: 'Contact Us', href: 'https://contactus-tat.tekkzy.com/' },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Navbar = () => {
           <span>
             Affiliated to BPUT <span className="mx-2 text-[#FBB03B]">|</span> NAAC 'A' Accredited
           </span>
-          <a href="#" className="flex items-center gap-1.5 hover:text-white transition-colors">
+          <a href="https://alumni-tat.tekkzy.com/" className="flex items-center gap-1.5 hover:text-white transition-colors">
             <Users size={12} />
             Alumni
           </a>
@@ -78,7 +78,7 @@ const Navbar = () => {
           </nav>
 
           {/* CTA BUTTON */}
-          <a href="#" className="bg-[#E63946] hover:bg-[#c92f3a] text-white text-[12px] font-bold px-7 py-3 rounded uppercase transition-colors">
+          <a href="https://apply-now.tekkzy.com/" className="bg-[#E63946] hover:bg-[#c92f3a] text-white text-[12px] font-bold px-7 py-3 rounded uppercase transition-colors">
             Apply Now
           </a>
         </div>
