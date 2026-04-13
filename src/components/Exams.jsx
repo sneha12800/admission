@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { FileText, GraduationCap } from 'lucide-react';
 
 const Exams = () => {
   return (
@@ -26,12 +27,12 @@ const Exams = () => {
         <div className="flex flex-wrap gap-8 justify-center max-w-5xl mx-auto">
           {[
             {
-              icon: "📝",
+              icon: <FileText size={48} strokeWidth={1.5} />,
               title: "JEE Main",
               items: ["1st Year B.Tech", "1st Year Integrated 5 Years M.Tech"]
             },
             {
-              icon: "🎓",
+              icon: <GraduationCap size={48} strokeWidth={1.5} />,
               title: "OJEE",
               items: ["Lateral Entry B.Tech (Diploma & B.Sc.)", "M.Tech", "MCA", "MBA"]
             }
@@ -44,7 +45,7 @@ const Exams = () => {
               transition={{ delay: idx * 0.2 }}
               className="flex-1 min-w-[300px] bg-inst-pink/30 p-12 rounded-3xl border border-primary/20 text-center hover:shadow-2xl transition-all duration-500"
             >
-              <div className="text-6xl mb-8 transform group-hover:scale-110 transition-transform">{exam.icon}</div>
+              <div className="text-primary flex justify-center mb-8 transform group-hover:scale-110 transition-transform">{exam.icon}</div>
               <h3 className="text-3xl font-serif font-medium text-accent mb-6 leading-tight uppercase tracking-widest">{exam.title}</h3>
               <p className="text-sm font-bold text-primary italic uppercase tracking-widest mb-4">Mandatory for admission into:</p>
               <ul className="space-y-4">

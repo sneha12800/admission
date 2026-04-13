@@ -10,7 +10,7 @@
   --color-accent: #2c1e16;
   
   --font-serif: "Playfair Display", serif;
-  --font-sans: "Inter", "Outfit", sans-serif;
+  --font-sans: "Outfit", sans-serif;
 }
 
 @layer base {
