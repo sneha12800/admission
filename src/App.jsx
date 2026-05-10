@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import Overview from './components/Overview';
 import StoryBanner from './components/StoryBanner';
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="relative min-h-screen">
       <BackgroundDesigns />
-      <Navbar />
+      <Header />
       <main className="pt-[140px]">
         <Hero />
         <Overview />
